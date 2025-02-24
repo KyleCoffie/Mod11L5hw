@@ -7,7 +7,6 @@ const Home = () => {
   console.log('Rendering Home Component');
   return (
     <div className="home-container">
-      <h2>Home</h2>
       <Image src={welcomeImage} fluid className="welcome-image" alt="Welcome" />       <p>Welcome to the Marvel!</p>
       <Button variant="danger" as="a" href="https://www.disneystore.com/marvel-content/?CMP=SYN-MARVELCOM:NAV_MORE">Shop Now</Button>
       <Card className="mt-4" style={{ width: '16rem' }}>
