@@ -1,63 +1,65 @@
-Module 11 Lesson 4: Assignment | React Routing and Single-Page Applications
+Module 11 Lesson 5: Assignment | Integrating Bootstrap with React
 Remember to take your time and work through each question diligently! Test your code, make sure it works, and try to find ways to improve. Once you are happy and satisfied with your code, upload it to Github, then turn in your Github link at the bottom of the page!
 
 Don't forget. Make sure this assignment is in it's own repository. Not mixed in with others!
 
-1. Building a Comic Book Library with React Router
-Objective: The objective of this assignment is to develop a fundamental understanding of setting up routes in a React application using the React Router. You will create a comic book library management system with different pages for various features like browsing characters, viewing character details, and exploring comics. This exercise will enhance your ability to create single-page applications in React.
+1. Enhancing HomePage with React-Bootstrap
+Objective: The aim of this assignment is to enhance the visual appeal and usability of a HomePage component for an application using React-Bootstrap. You will focus on integrating React-Bootstrap components, specifically Buttons, Cards, and applying styling for Colors, Borders, and Shadows to create a more engaging user interface.
 
-Problem Statement: Your task is to set up a basic structure for a Comic Book Library Management System using React. The application should have different pages for 'Home', 'Browse Characters', 'Character Details', and 'Comics'. You will be creating the routes and setting up empty components for each page. We've created most of the components in previous lessons. So, reuse those components. Make sure to use the Marvel API for this assignment.
+Problem Statement: Based on a basic HomePage component for any application, your task is to enhance this component using React-Bootstrap, improving its visual presentation and user interaction. You will incorporate buttons for actions, apply color schemes, add borders, utilize shadows for depth, and introduce cards to display content, aiming to create a more attractive and user-friendly page.
 
-Task 1: Install and Setup React Router
-Initialize a new React project or build off of the Marvel Comics API comic project. Make sure to use the Marvel API and install the latest version of the React Router.
-Set up React Router in your application.
-Expected Outcome:
-A set up React project with the React Router installed.
-Basic configuration of React Router in the application's main file.
-Task 2: Create Route Components
-Create four new components: Home, BrowseCharacters, CharacterDetails, and Comics. The home & comic components can be empty for now, with just a simple return statement and you can reuse your browse & detail components from the previous assignment.
-Code Example:
-// src/components/Comics.jsx
-const Comics = () => {
-    return (
-        <div>
-            <h2>Comics</h2>
-            <p>This component is under construction. Check back later!</p>
-        </div>
-    );
-};
+Task 1: Integrating React-Bootstrap and Adding Buttons
 
-export default Comics;
-Expected Outcome:
-Four components created and ready to be used in routing.
-Task 3: Setting Up Routes
-In your application's main file, set up routes using BrowserRouter and Route from React Router. Assign each route to the corresponding component.
-Expected Outcome:
-The application should have a basic routing setup with Home, BrowseCharacters, CharacterDetails, and Comics accessible via different paths.
-Navigating to these paths should display the corresponding component
-2. Enhancing Comic Book Library with Advanced Routing
-Objective: The objective of this assignment is to deepen your understanding of advanced routing techniques in React using React Router. You will enhance the Comic Book Library by adding navigational links, dynamic routes with parameters, and managing error pages for undefined routes.
+First, ensure React-Bootstrap is installed in your project: npm install react-bootstrap bootstrap.
+Import the necessary React-Bootstrap components into your HomePage component.
+Add a primary button labeled "Shop Now" that represents the main call to action (CTA) for users. Expected Outcome:
+The HomePage component should render with a "Shop Now" button styled with React-Bootstrap's primary variant.
 
-Problem Statement: Expand on the Comic Book Library Management System by implementing navigation between different pages, handling dynamic parameters for character details, and creating an error handling route for undefined paths.
+Task 2: Applying Color Scheme
 
-Task 1: Implement Navigation Links
-Add Link and NavLink components from React Router to navigate between the Home, Browse Characters, and Comics pages.
-Highlight the active link using NavLink.
+Customize the background color of the HomePage component to improve visual appeal.
+Apply a text color that complements the background, ensuring good readability. Expected Outcome:
+The HomePage component's background and text colors are updated, enhancing visual contrast and readability.
+
+Task 3: Enhancing UI with Borders, Shadows, and Cards
+
+Add a border to the HomePage component for better definition.
+Utilize shadows on the "Shop Now" button to create a sense of depth and focus.
+Introduce React-Bootstrap's Card component to display additional content or information on the HomePage. Expected Outcome:
+The HomePage component features distinct borders and shadows, enhancing its aesthetic and emphasizing the "Shop Now" button.
+Utilize the Card component to display additional content or information, such as featured products or promotions.
+
+Task 4: Adding a Responsive Image to HomePage
+
+Select an image that represents the theme of your application. For demonstration purposes, assume the image is located in your project at src/assets/welcome-image.jpg.
+Import the Image component from React-Bootstrap and use it to add the chosen image to your HomePage component.
+Apply React-Bootstrap's responsive image features to ensure the image scales nicely on different screen sizes.
 Expected Outcome:
-Functional navigation links in the application.
-The active link is visually differentiated from others.
-Task 2: Dynamic Routes for Character Details
-Modify the CharacterDetails component to accept a character ID as a route parameter.
-Update the BrowseCharacters component to link each character to its details page using the character ID.
+The HomePage component should now display the chosen image above or below the welcome message.
+The image should be responsive, adjusting its size according to the screen width without distorting its aspect ratio.
+
+2. Enhancing the NotFound Component with React-Bootstrap
+Objective: The purpose of this assignment is to enhance the visual and navigational aspects of a NotFound component in a React application. By utilizing React-Bootstrap, you will incorporate colors, grids, images, and navigation links to create a more engaging and informative "404 - Not Found" page.
+
+Task: Improving NotFound Component Enhance the user experience of a NotFound component by applying React-Bootstrap features including colors for text, a grid layout for better structure, an engaging image to soften the error message, and clearer navigation options using React-Bootstrap's NavLink component.
+
+Integrate React-Bootstrap:
+Ensure React-Bootstrap is installed in your project (npm install react-bootstrap bootstrap).
+Import necessary components (Container, Row, Col, Image, Button) from React-Bootstrap.
+Apply a Color Scheme:
+Use React-Bootstrap utilities to apply a color scheme that matches your app's design. Focus on text colors and backgrounds to make the NotFound page visually appealing.
+Structure Content with Grid:
+Use the Container, Row, and Col components to structure the message and image within a grid layout, ensuring content is well-organized and responsive.
+Add an Engaging Image:
+Include a friendly or humorous image related to navigation errors. This image should be responsive and fit well within the grid layout.
+Enhance Navigation with NavLink:
+Replace the <Link> component with React-Bootstrap's NavLink for better styling and integration. Ensure the navigation back to the homepage is clear and inviting.
 Expected Outcome:
-Clicking on a character in BrowseCharacters navigates to the CharacterDetails page with the correct character ID.
-The CharacterDetails page dynamically displays information based on the character ID.
-Task 3: Error Page Management
-Create a new component NotFound to handle undefined routes.
-Configure your routing to display the NotFound component for any undefined paths.
-Expected Outcome:
-Navigating to an undefined path displays the NotFound component.
-Users are informed that the page they are looking for does not exist.
+
+The NotFound component should present a structured, visually appealing "404 - Not Found" page with a clear color scheme.
+Content should be organized in a responsive grid layout, enhancing readability and aesthetics on different screen sizes.
+An engaging image is displayed, reducing the frustration typically associated with error pages.
+Navigation back to the homepage is facilitated by a styled NavLink, encouraging users to continue browsing the site.
 NOTE: Ensure that all code in your file is ready to run. This means that when your code is cloned down, we should be able to install the dependencies and run the react app. Your components should be implemented and all code should run as expected and asked for in the assignment.
 
-The goal of this note is to ensure that all code in your Python file runs smoothly and that is has been tested.
+The goal of this note is to ensure that all code in your React project runs smoothly and that is has been tested.
