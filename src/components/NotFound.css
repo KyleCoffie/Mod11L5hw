@@ -1,0 +1,22 @@
+/* src/components/NotFound.css */
+.not-found-container {
+    padding: 50px 20px;
+    text-align: center;
+    color: #333; /* Text color */
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.not-found-container h2 {
+    margin-bottom: 20px;
+}
+
+.not-found-container p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.error-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
